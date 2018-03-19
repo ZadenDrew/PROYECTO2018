@@ -1,8 +1,8 @@
 
 package proyectopro;
 
-import clase.Juegos;
-import clase.Metodos;
+import tienda.Juegos;
+import tienda.Metodos;
 import ficheros.Escribir;
 import ficheros.Leer;
 import ficheros.Relleno;

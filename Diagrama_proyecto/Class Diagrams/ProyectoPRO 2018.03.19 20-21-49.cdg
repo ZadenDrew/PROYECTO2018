@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ProyectoPRO">
+  <ClassDiagramComponents>
+    <Class name="Escribir" package="ficheros" visibility="public" xPosition="230.0" yPosition="65.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="escribirJuego" returnType="ArrayList&lt;Juegos&gt;" visibility="public">
+          <Argument type="File" name="fichero"/>
+          <Argument type="Juegos" name="j1"/>
+          <Argument type="ArrayList&lt;Juegos&gt;" name="lista"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Leer" package="ficheros" visibility="public" xPosition="389.0" yPosition="599.0">
+      <Fields>
+        <Field name="line" type="String" visibility="package"/>
+        <Field name="j" type="Juegos" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="leer" returnType="String" visibility="public">
+          <Argument type="File" name="fichero"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Relleno" package="ficheros" visibility="public" xPosition="399.0" yPosition="332.0">
+      <Fields>
+        <Field name="rellenado" type="ArrayList" visibility="package"/>
+        <Field name="l" type="Leer" visibility="package"/>
+        <Field name="fichero" type="File" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="rellenar" returnType="ArrayList" visibility="public">
+          <Argument type="File" name="fichero"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Administrar" package="grafica" visibility="public" xPosition="208.0" yPosition="807.0">
+      <Fields>
+        <Field name="m" type="Metodos" visibility="package"/>
+        <Field name="e" type="Escribir" visibility="package"/>
+        <Field name="l" type="Leer" visibility="package"/>
+        <Field name="r" type="Relleno" visibility="package"/>
+        <Field name="fichero" type="File" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton6" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton7" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton6ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton7ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProyectoPRO" package="proyectopro" visibility="public" xPosition="880.0" yPosition="191.0">
+      <Fields>
+        <Field name="r" type="Relleno" visibility="package" isStatic="true"/>
+        <Field name="fichero" type="File" visibility="package" isStatic="true"/>
+        <Field name="l" type="Leer" visibility="package" isStatic="true"/>
+        <Field name="e" type="Escribir" visibility="package" isStatic="true"/>
+        <Field name="m" type="Metodos" visibility="package" isStatic="true"/>
+        <Field name="listaJuegos" type="ArrayList&lt;Juegos&gt;" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Juegos" package="tienda" visibility="public" xPosition="1207.0" yPosition="533.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="precio" type="float" visibility="private"/>
+        <Field name="unidades" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="consola"/>
+          <Argument type="float" name="precio"/>
+          <Argument type="int" name="unidades"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getConsola" returnType="String" visibility="public"/>
+        <Method name="setConsola" returnType="void" visibility="public">
+          <Argument type="String" name="consola"/>
+        </Method>
+        <Method name="getPrecio" returnType="float" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="float" name="precio"/>
+        </Method>
+        <Method name="getUnidades" returnType="int" visibility="public"/>
+        <Method name="setUnidades" returnType="void" visibility="public">
+          <Argument type="int" name="unidades"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Metodos" package="tienda" visibility="public" xPosition="1269.0" yPosition="41.0">
+      <Fields>
+        <Field name="pw" type="PrintWriter" visibility="package"/>
+        <Field name="e" type="Escribir" visibility="package"/>
+        <Field name="completo" type="String" visibility="package"/>
+        <Field name="linea" type="String" visibility="package"/>
+        <Field name="sc" type="Scanner" visibility="package"/>
+        <Field name="lista" type="String[]" visibility="package"/>
+        <Field name="j1" type="Juegos" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="nuevoJuego" returnType="Juegos" visibility="public"/>
+        <Method name="eliminarJuego" returnType="void" visibility="public">
+          <Argument type="File" name="pf"/>
+        </Method>
+        <Method name="buscarJuego" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="modificarPrecio" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="float" name="precio"/>
+        </Method>
+        <Method name="modificarUnidades" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="unidades"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="l" source="proyectopro.ProyectoPRO" target="ficheros.Leer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="e" source="grafica.Administrar" target="ficheros.Escribir" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="r" source="grafica.Administrar" target="ficheros.Relleno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="e" source="proyectopro.ProyectoPRO" target="ficheros.Escribir" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="e" source="tienda.Metodos" target="ficheros.Escribir" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="l" source="grafica.Administrar" target="ficheros.Leer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="j" source="ficheros.Leer" target="tienda.Juegos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="m" source="grafica.Administrar" target="tienda.Metodos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaJuegos" source="proyectopro.ProyectoPRO" target="tienda.Juegos" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Juegos&gt;"/>
+    <HasRelation name="j1" source="tienda.Metodos" target="tienda.Juegos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="tienda.Metodos" target="tienda.Juegos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="m" source="proyectopro.ProyectoPRO" target="tienda.Metodos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="l" source="ficheros.Relleno" target="ficheros.Leer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ficheros.Escribir" target="tienda.Juegos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="r" source="proyectopro.ProyectoPRO" target="ficheros.Relleno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,6 +1,7 @@
 package ficheros;
 
-import clase.Juegos;
+import excepciones.Excepciones;
+import tienda.Juegos;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +13,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Alex Gonzalez Gonzalez y Andrea Cabezas López
+ * @author Alejandro Javier González González y Andrea Cabezas López
  */
 public class Leer {
 
@@ -23,13 +24,17 @@ public class Leer {
      *
      * @param fichero
      * @return
+     * @throws excepciones.Excepciones
      */
-    public String leer(File fichero) {
+    public String leer(File fichero) throws Excepciones {
 
         ArrayList<Juegos> lista = new ArrayList();
         try {
             try (BufferedReader reader = new BufferedReader(new FileReader(fichero))) {
                 while ((line = reader.readLine()) != null) {
+                    if (line == null) {
+                     throw new Excepciones("El fichero está vacío ."); 
+                    }
                     String[] sep = line.split(",");
                     j.setNombre(sep[0]);
                     j.setConsola(sep[1]);

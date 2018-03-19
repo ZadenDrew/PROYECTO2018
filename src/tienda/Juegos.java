@@ -1,9 +1,11 @@
-package clase;
+package tienda;
 /**
  * 
- * @author Alex Gonzalez Gonzalez  y  Andrea Cabezas López
+ * @author Alejandro Javier González González  y  Andrea Cabezas López
+ * @version ALPHA
+ * 
  */
-public class Juegos implements Comparable {
+public  class Juegos {
 
     private String nombre, consola;
     private float precio;
@@ -88,21 +90,4 @@ public class Juegos implements Comparable {
     public String toString() {
         return nombre + "," + consola + "," + precio + "," + unidades;
     }
-/**
- * 
- * @param o
- * @return 
- */
-    @Override
-    public int compareTo(Object o) {
-        Juegos j = (Juegos) o;
-        if (nombre.compareToIgnoreCase(j.getNombre()) > 0) {
-            return 1;
-        } else if (nombre.compareToIgnoreCase(j.getNombre()) == 0) {
-            return 0;
-        } else {
-            return -1;
-        }
-    }
-
 }

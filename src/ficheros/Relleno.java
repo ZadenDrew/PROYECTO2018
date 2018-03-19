@@ -1,6 +1,6 @@
 package ficheros;
 
-import clase.Juegos;
+import tienda.Juegos;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 /**
  * 
- * @author Alex Gonzalez Gonzalez  y  Andrea Cabezas López
+ * @author Alejandro Javier González González  y  Andrea Cabezas López
  */
 public class Relleno {
 

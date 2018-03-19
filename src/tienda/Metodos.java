@@ -1,4 +1,4 @@
-package clase;
+package tienda;
 
 import ficheros.Escribir;
 import java.io.File;
@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Alex Gonzalez Gonzalez y Andrea Cabezas López
+ * @author Alejandro Javier González González  y  Andrea Cabezas López
  */
 public class Metodos {
 

@@ -1,18 +1,21 @@
 
 package grafica;
 
-import clase.Juegos;
-import clase.Metodos;
+import excepciones.Excepciones;
+import tienda.Juegos;
+import tienda.Metodos;
 import ficheros.Escribir;
 import ficheros.Leer;
 import ficheros.Relleno;
 import java.io.File;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import static proyectopro.ProyectoPRO.listaJuegos;
 
 /**
  *
- * @author Alex Gonzalez Gonzalez  y  Andrea Cabezas López
+ * @author Alejandro Javier González González  y  Andrea Cabezas López
  */
 public class Administrar extends javax.swing.JFrame {
 
@@ -195,7 +198,12 @@ public class Administrar extends javax.swing.JFrame {
  * @param evt 
  */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        l.leer(fichero);
+
+           try {
+               l.leer(fichero);
+           } catch (Excepciones ex) {
+           JOptionPane.showMessageDialog(null, ex.getMessage());
+           }
     }//GEN-LAST:event_jButton2ActionPerformed
 /**
  * 
